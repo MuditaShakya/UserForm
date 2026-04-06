@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VWO Test Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1 id="headline">Improve Your Workflow 🚀</h1>
+    <button class="primary-btn">Primary CTA</button>
+    <button class="secondary-btn">Secondary CTA</button>
+    <button class="ghost-btn">Ghost Button</button>
+  </header>
+
+  <!-- INTERACTIVE SECTION -->
+  <section class="controls">
+    <h2>Preferences</h2>
+
+    <input type="text" placeholder="Enter name">
+    <input type="email" placeholder="Enter email">
+    <input type="password" placeholder="Enter password">
+
+    <select id="planSelect">
+      <option value="">Select Plan</option>
+      <option value="basic">Basic</option>
+      <option value="pro">Pro</option>
+    </select>
+
+    <label>
+      <input type="checkbox"> Subscribe to newsletter
+    </label>
+
+    <div>
+      <p>Choose Theme:</p>
+      <label><input type="radio" name="theme" value="light" checked> Light</label>
+      <label><input type="radio" name="theme" value="dark"> Dark</label>
+    </div>
+
+    <label class="switch">
+      <input type="checkbox" id="toggleFeature">
+      <span class="slider"></span>
+    </label>
+    <p>Enable Feature</p>
+  </section>
+
+  <!-- FORM (IMPORTANT PART) -->
+  <section class="form-section">
+    <h2>Signup Form</h2>
+
+    <form 
+      id="signup-form"
+      name="signupForm"
+      action="https://getform.io/f/fb585bca-5f55-43bd-a114-0545178b5ccb"
+      method="POST"
+    >
+
+      <input type="text" name="name" id="name" placeholder="Name" required>
+      <input type="email" name="email" id="email" placeholder="Email" required>
+
+      <label>
+        <input type="checkbox" id="terms"> Accept Terms
+      </label>
+
+      <button type="submit" id="submit-btn">Submit</button>
+      <p id="form-message"></p>
+    </form>
+
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p>This is a popup modal 🎉</p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <button id="openModal" class="floating-btn">Open Modal</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
